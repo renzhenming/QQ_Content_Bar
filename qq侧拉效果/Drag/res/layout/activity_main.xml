@@ -1,0 +1,70 @@
+<com.example.drag.DragLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/draglayout"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp" >
+
+        <ImageView
+            android:id="@+id/leftiamge"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/head" />
+
+        <ListView
+            android:id="@+id/leftlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:background="#18B6EF"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" >
+
+            <ImageView
+                
+                android:id="@+id/contentimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/head" />
+
+            <ImageView
+                android:id="@+id/contentimage"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/skin_conversation_title_right_btn_1" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/contentlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</com.example.drag.DragLayoutView>
